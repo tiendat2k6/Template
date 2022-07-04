@@ -3,13 +3,17 @@
 using ll = long long;
 using str = std::string;
 using ull = unsigned long long;
+using ii = std::pair <int, int>;
 
+#define X first
+#define Y second
 #define endl '\n'
 #define Xd << '\n' <<
 #define And << " " <<
 #define Dd(x) (long long)x.length()
 #define End cout Xd "\n"; return 0;
 #define Time_start clock_t start = clock();
+#define reset(a, x) memset(a, x, sizeof(a));
 #define Fu(i, l, r) for (int i = l; i <= r; i++)
 #define Nhapmang(x, n) Fu(i, 1, n) cin >> x[i];
 #define Inmang(x, n) Fu(i, 1, n) cout << x[i] << " ";
@@ -26,13 +30,14 @@ const int Pt = 1e2 + 5;
 
 void solve()
 {
-
+	
 }
 
 int main()
 {
 	Fast;
-	// int t; cin >> t; while(t--)
+	// freopen("test.inp", "r", stdin);
+    // int t; cin >> t; while(t--)
 		solve();
 	End;
 }
