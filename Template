@@ -22,7 +22,7 @@ using ii = std::pair <int, int>;
 #define Time_end(start) clock_t end=clock();cout Xd(double)(end-start)/CLOCKS_PER_SEC<<'s';
 using namespace std;
 
-const int Pt = 1e2 + 5;
+const int N = 1e2 + 5;
 
 /*----------// Variables \\-----------*/
 	
