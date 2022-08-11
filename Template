@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
+#pragma GCC optimize("Ofast")
 
-using ll = long long;
 using str = std::string;
 using ull = unsigned long long;
 using ii = std::pair <int, int>;
@@ -8,6 +8,7 @@ using ii = std::pair <int, int>;
 #define X first
 #define Y second
 #define endl '\n'
+#define int long long
 #define Xd << '\n' <<
 #define And << " " <<
 #define Dd(x) (long long)x.length()
@@ -24,20 +25,20 @@ using namespace std;
 
 const int N = 1e2 + 5;
 
-/*----------// Variables \\-----------*/
-	
-/*------------------------------------*/
+/*-------------// Variables \\--------------*/
+    
+/*------------------------------------------*/
 
 void solve()
 {
-	
+    
 }
 
-int main()
+int32_t main()
 {
-	Fast;
-	// freopen("test.inp", "r", stdin);
+    Fast;
+    // freopen("test.inp", "r", stdin);
     // int t; cin >> t; while(t--)
-		solve();
-	End;
+        solve();
+    End;
 }
