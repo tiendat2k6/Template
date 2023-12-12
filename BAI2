@@ -1,0 +1,77 @@
+#include <iostream>
+#include <stdio.h>
+#include <algorithm>
+#include <iomanip>
+#include <cmath>
+#include <cstring>
+#include <climits>
+#include <cstdlib>
+#include <ctime>
+
+#include <vector>
+#include <set>
+#include <bitset>
+#include <map>
+#include <queue>
+#include <deque>
+#include <stack>
+#include <string>
+#include <unordered_map>
+
+#pragma GCC optimize("Ofast")
+
+using str = std::string;
+using ull = unsigned long long;
+using ii = std::pair <int, int>;
+
+#define X first
+#define Y second
+#define endl '\n'
+#define pb push_back
+#define int long long
+#define And << " " <<
+#define len(x) (long long)x.length()
+#define reset(a, x) memset(a, x, sizeof(a))
+#define End cout << '\n' << "\n"; return 0;
+#define Fu(i, l, r) for (int i = l; i <= r; i++)
+#define enter_arr(x, n) Fu(i, 1, n) cin >> x[i];
+#define File(x) freopen(x".INP", "r", stdin); freopen(x".OUT", "w", stdout);
+#define Fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+using namespace std;
+
+const int N = 1e3 + 5;
+
+/*-------------// Variables \\--------------*/
+    string a[N];
+/*------------------------------------------*/
+
+void solve()
+{
+    string s;
+    int i = 0, ans = 0;
+
+    while(cin >> s)
+    {
+        s = '0' + s; a[++i] = s;
+
+        for(int j = 1; j < len(s); j++)
+        {
+            if (a[i][j] == '0') continue;
+
+            if (i == 1) ans += (a[i][j-1] == '0');
+            else ans += (a[i][j-1] == '0' && a[i-1][j] == '0');
+        }
+    }
+
+    cout << ans;
+}
+
+int32_t main()
+{
+    Fast;
+    File("BAI2")
+    // freopen("test.inp", "r", stdin);
+    // int t; cin >> t; while(t--)
+        solve();
+    End;
+}
